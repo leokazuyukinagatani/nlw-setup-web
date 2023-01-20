@@ -5,11 +5,13 @@ const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 const summaryDates = generateDatesFromYearBeginning()
 const minimumSummaryDatesSize = 18 * 7
 
+import { api } from '../lib/api'
 const amountOfDaysToFill = minimumSummaryDatesSize - summaryDates.length
 
 console.log(summaryDates)
 
 export function SummaryTable() {
+  
   return (
     <div className="w-full flex">
       <div className="grid grid-rows-7 grid-flow-row gap-3">
